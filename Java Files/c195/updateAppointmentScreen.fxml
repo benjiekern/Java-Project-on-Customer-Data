@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="673.0" prefWidth="910.0" style="-fx-background-color: #99BBBB;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="c195.UpdateAppointmentScreenController">
+   <children>
+      <Label layoutX="261.0" layoutY="82.0" text="Update Appointment">
+         <font>
+            <Font name="Georgia Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="140.0" text="Customer Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerNameTxt" layoutX="236.0" layoutY="170.0" />
+      <Label layoutX="520.0" layoutY="140.0" text="Title">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleTxt" layoutX="520.0" layoutY="170.0" />
+      <Label layoutX="236.0" layoutY="240.0" text="Start Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="startTimeTxt" layoutX="236.0" layoutY="270.0" />
+      <Label layoutX="520.0" layoutY="240.0" text="End Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="endTimeTxt" layoutX="520.0" layoutY="270.0" />
+      <Label layoutX="235.0" layoutY="340.0" text="Date (YYYY-MM-DD)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateTxt" layoutX="236.0" layoutY="370.0" />
+      <TextField fx:id="typeTxt" layoutX="520.0" layoutY="370.0" />
+      <Label layoutX="520.0" layoutY="340.0" text="Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="440.0" text="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionTxt" layoutX="235.0" layoutY="467.0" prefHeight="82.0" prefWidth="164.0" />
+      <Label layoutX="520.0" layoutY="440.0" text="Location">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="locationTxt" layoutX="520.0" layoutY="470.0" />
+      <Button layoutX="406.0" layoutY="607.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="27.0" prefWidth="98.0" text="Update" />
+   </children>
+</AnchorPane>
